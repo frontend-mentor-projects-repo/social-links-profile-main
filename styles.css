@@ -16,6 +16,11 @@ body {
     min-height: 100vh;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .wrapper {
     background-color: rgb(31, 31, 31);
     width: 384px;
@@ -26,6 +31,14 @@ body {
     align-items: center;
     padding: 40px;
     border-radius: 12px;
+}
+
+@media (max-width: 480px) {  /* Comments from PR: make it max-width so that it scales to thinner screen */
+    .wrapper {
+        width: 80%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 h1 {
@@ -64,10 +77,17 @@ ul li {
     font-family: 'Inter Bold', sans-serif;
 }
 
-ul li:hover {
+ul li:hover, ul li:hover a {       /* to style the <a> element within hover over <li>, use ul li:hover a */
     background-color: rgb(196, 248, 42);
     cursor: pointer;
     color: rgb(51, 51, 51);
+}
+
+ul li:focus-within, ul li:focus-within a {    /* use focus-within to say the style of THIS element should change if any child element inside is being focused */
+    background-color: rgb(196, 248, 42);
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+    outline: none;          /* remove the default outline effect when using keyboard to focus */
 }
 
 ul > * + * {
@@ -94,8 +114,4 @@ ul > * + * {
 
 .attribution {
     color: rgb(196, 248, 42);
-}
-
-.attribution a {
-    color: white;
 }
