@@ -52,7 +52,13 @@ which literally means for every (direct) child of `class="stack"` that has a pre
 
 I also learned to use **rem** more when working with font sizes. This allows the user to be able to adjust their screen font sizes according to their needs.
 
-I also worked more with **margin** in CSS. Understanding default margins applied through **"inspect"/"devtools"** and then resolve the margins respectively.
+I have more experience working with **margin** in CSS. Understanding default margins applied through **"inspect"/"devtools"** and then resolve the margins respectively.
+
+I learned about using `@media` to make CSS design more adaptive to user screensize.
+
+I also learned about styling the pseudo classes:
+* keyboard traverse through links `<a>`; while `<a>` usually immediately wraps the text, the focused/hover state should usually style the wrapper of `<a>` -- thus one can use `focus-wiithin`
+* a pseudo class can be think of a class, and so we can style children of a pseudo clas as well (e.g., style the `<a>` element inside the pseudo class `li:hover`)
 
 Finally, I can view and style the design more readily in terms of groups of elements (e.g., the design at first looks like 5 groups of elements, but are actually 4 groups of elements). 
 
