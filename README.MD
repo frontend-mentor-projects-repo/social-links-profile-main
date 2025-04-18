@@ -54,7 +54,7 @@ I also learned to use **rem** more when working with font sizes. This allows the
 
 I also worked more with **margin** in CSS. Understanding default margins applied through **"inspect"/"devtools"** and then resolve the margins respectively.
 
-Finally, I can view and style the design more readily in terms of groups of elements. 
+Finally, I can view and style the design more readily in terms of groups of elements (e.g., the design at first looks like 5 groups of elements, but are actually 4 groups of elements). 
 
 ### Continued development
 
