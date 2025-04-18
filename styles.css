@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('./assets/fonts/static/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background-color: rgb(31, 31, 31);
+    width: 384px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-family: 'Inter Bold', sans-serif;
+}
+
+h1, p, li {
+    color: white;
+    width: 100%;
+    text-align: center;
+    line-height: 150%;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+p, li {
+    font-size: 0.875rem;
+    font-family: 'Inter Regular', sans-serif;
+}
+
+ul {
+    list-style-type: none;   /* removes the bullet points in the front */
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    display: block;
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    padding: 12px 0px;
+    border-radius: 8px;
+    font-family: 'Inter Bold', sans-serif;
+}
+
+ul li:hover {
+    background-color: rgb(196, 248, 42);
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+}
+
+ul > * + * {
+    margin-block-start: 1rem;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.title p {
+    font-family: 'Inter Bold', sans-serif;
+    color: rgb(196, 248, 42);
+}
+
+#headshot {
+    border-radius: 100%;
+    width: 88px;
+    margin-bottom: 0;
+}
+
+.attribution {
+    color: rgb(196, 248, 42);
+}
+
+.attribution a {
+    color: white;
+}
